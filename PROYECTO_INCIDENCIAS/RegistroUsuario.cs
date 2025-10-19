@@ -118,7 +118,8 @@ namespace PROYECTO_INCIDENCIAS
                         }
 
                         // Guardar usuario en archivo
-                        string nuevoUsuario = $"{nombre}|{nombreUsuario}|{dni}|{telefono}|{contrasena}";
+                        string nuevoUsuario = $"{nombre}|{nombreUsuario}|{dni}|{telefono}|{contrasena}|Usuario";
+
                         File.AppendAllText(archivoUsuarios, nuevoUsuario + Environment.NewLine);
 
                         MessageBox.Show("Usuario registrado correctamente.");

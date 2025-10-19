@@ -13,6 +13,7 @@ namespace PROYECTO_INCIDENCIAS
 {
     public partial class Form1 : Form
     {
+        const string contraseñaMaestra = "Admin123";
         string archivoUsuarios = "usuarios.txt";
         public Form1()
         {
@@ -45,27 +46,41 @@ namespace PROYECTO_INCIDENCIAS
 
             // Leer todas las líneas del archivo
             var lineas = File.ReadAllLines(archivoUsuarios);
+            bool usuarioEncontrado = false;
 
-            bool usuarioEncontrado = lineas.Any(linea =>
+            foreach (var linea in lineas)
             {
                 var datos = linea.Split('|');
-                if (datos.Length >= 5)
+                if (datos.Length >= 6)
                 {
                     string usuarioArchivo = datos[1];
                     string contrasenaArchivo = datos[4];
-                    return usuarioArchivo == usuario && contrasenaArchivo == contrasena;
-                }
-                return false;
-            });
+                    string rol = datos[5];
 
-            if (usuarioEncontrado)
-            {
-                MessageBox.Show("Inicio de sesión exitoso.");
-                roles rolesform = new roles();
-                rolesform.Show();
-                this.Hide();
+                    if (usuarioArchivo == usuario && contrasenaArchivo == contrasena)
+                    {
+                        usuarioEncontrado = true;
+
+                        MessageBox.Show($"Inicio de sesión exitoso como {rol}.");
+
+                        if (rol == "Administrador")
+                        {
+                            inicio_autoridad formAdmin = new inicio_autoridad();
+                            formAdmin.Show();
+                        }
+                        else
+                        {
+                            inicio_usuario formUsuario = new inicio_usuario(usuario);
+                            formUsuario.Show();
+                        }
+
+                        this.Hide();
+                        break;
+                    }
+                }
             }
-            else
+
+            if (!usuarioEncontrado)
             {
                 MessageBox.Show("Usuario o contraseña incorrectos.");
             }

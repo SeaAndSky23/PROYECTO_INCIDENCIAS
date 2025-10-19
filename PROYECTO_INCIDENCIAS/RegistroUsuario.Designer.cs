@@ -31,6 +31,7 @@ namespace PROYECTO_INCIDENCIAS
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroUsuario));
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblDni = new System.Windows.Forms.Label();
             this.tbNombre = new System.Windows.Forms.TextBox();
@@ -214,6 +215,7 @@ namespace PROYECTO_INCIDENCIAS
             this.ClientSize = new System.Drawing.Size(834, 511);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RegistroUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistroUsuario";

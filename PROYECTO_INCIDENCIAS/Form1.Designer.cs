@@ -96,7 +96,7 @@ namespace PROYECTO_INCIDENCIAS
             this.iscrearcuenta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iscrearcuenta.Font = new System.Drawing.Font("Segoe UI", 7F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.iscrearcuenta.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.iscrearcuenta.Location = new System.Drawing.Point(143, 405);
+            this.iscrearcuenta.Location = new System.Drawing.Point(134, 404);
             this.iscrearcuenta.Name = "iscrearcuenta";
             this.iscrearcuenta.Size = new System.Drawing.Size(78, 12);
             this.iscrearcuenta.TabIndex = 7;
@@ -110,7 +110,7 @@ namespace PROYECTO_INCIDENCIAS
             this.isbtningresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.isbtningresar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.isbtningresar.ForeColor = System.Drawing.Color.White;
-            this.isbtningresar.Location = new System.Drawing.Point(145, 359);
+            this.isbtningresar.Location = new System.Drawing.Point(136, 358);
             this.isbtningresar.Name = "isbtningresar";
             this.isbtningresar.Size = new System.Drawing.Size(76, 27);
             this.isbtningresar.TabIndex = 6;

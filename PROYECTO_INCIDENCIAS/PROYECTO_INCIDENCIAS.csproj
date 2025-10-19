@@ -46,28 +46,81 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ColaReportes.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmClaveAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClaveAdmin.Designer.cs">
+      <DependentUpon>FrmClaveAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionUsuarios.Designer.cs">
+      <DependentUpon>FrmGestionUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicidencias_finalizadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicidencias_finalizadas.Designer.cs">
+      <DependentUpon>Inicidencias_finalizadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inicio_autoridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicio_autoridad.Designer.cs">
+      <DependentUpon>inicio_autoridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inicio_usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicio_usuario.Designer.cs">
+      <DependentUpon>inicio_usuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroProblema.cs" />
     <Compile Include="RegistroUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegistroUsuario.Designer.cs">
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="roles.cs">
+    <Compile Include="registro_incidencia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="roles.Designer.cs">
-      <DependentUpon>roles.cs</DependentUpon>
+    <Compile Include="registro_incidencia.Designer.cs">
+      <DependentUpon>registro_incidencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="v_insidencias_proceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="v_insidencias_proceso.Designer.cs">
+      <DependentUpon>v_insidencias_proceso.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClaveAdmin.resx">
+      <DependentUpon>FrmClaveAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionUsuarios.resx">
+      <DependentUpon>FrmGestionUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicidencias_finalizadas.resx">
+      <DependentUpon>Inicidencias_finalizadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio_autoridad.resx">
+      <DependentUpon>inicio_autoridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio_usuario.resx">
+      <DependentUpon>inicio_usuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,8 +134,11 @@
     <EmbeddedResource Include="RegistroUsuario.resx">
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="roles.resx">
-      <DependentUpon>roles.cs</DependentUpon>
+    <EmbeddedResource Include="registro_incidencia.resx">
+      <DependentUpon>registro_incidencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="v_insidencias_proceso.resx">
+      <DependentUpon>v_insidencias_proceso.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

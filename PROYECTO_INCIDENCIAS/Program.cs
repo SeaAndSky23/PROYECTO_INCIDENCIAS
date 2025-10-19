@@ -8,6 +8,9 @@ namespace PROYECTO_INCIDENCIAS
 {
     internal static class Program
     {
+        public static ColaReportes ColaReportesGLOBAL = new ColaReportes();
+        public static ListaEnlazadaReportesAtendidos ListaReportesGlobal = new ListaEnlazadaReportesAtendidos();
+        public static PilaReportes PilaReportesGlobal = new PilaReportes();
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
