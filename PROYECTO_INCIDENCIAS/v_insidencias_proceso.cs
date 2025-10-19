@@ -68,32 +68,42 @@ namespace PROYECTO_INCIDENCIAS
         {
             if (dgvincidenciasproceso.CurrentRow == null)
             {
-                MessageBox.Show("Porfavor selecciona una reporte");
+                MessageBox.Show("Por favor selecciona un reporte");
+                return;
             }
-            int filaseleccionada = dgvincidenciasproceso.CurrentRow.Index;
+
+            int filaSeleccionada = dgvincidenciasproceso.CurrentRow.Index;
+
+            // Buscar el nodo correspondiente en la lista de reportes en proceso
             Nodo actual = Program.ListaReportesGlobal.Inicio;
             int i = 0;
-            while (actual != null && i != filaseleccionada)
+            while (actual != null && i != filaSeleccionada)
             {
                 actual = actual.siguiente;
                 i++;
             }
-            if (actual == null)
-            {
-                return;
-            }
+
+            if (actual == null) return;
+
             RegistroProblema seleccionado = actual.dato;
-            if (MessageBox.Show("¿Estas seguro de dar por finalizado el reporte?", "ATENCIÓN",
-       MessageBoxButtons.YesNo) == DialogResult.Yes)
+
+            if (MessageBox.Show("¿Estás seguro de dar por finalizado el reporte?", "ATENCIÓN",
+                MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
+                // 1. Eliminar de la lista de reportes en proceso
                 Program.ListaReportesGlobal.EliminarReporteFINALIZADO(seleccionado);
+
+                // 2. Agregar a la pila de reportes finalizados
                 Program.PilaReportesGlobal.Apilar(seleccionado);
+
                 MessageBox.Show("Reporte correctamente finalizado");
+
+                // 3. Actualizar el DataGridView
                 MostrarDataLista(Program.ListaReportesGlobal.Inicio, dgvincidenciasproceso);
             }
             else
             {
-                MessageBox.Show("Porfavor asegurate de su conclusión");
+                MessageBox.Show("Por favor asegúrate de su conclusión");
             }
         }
 

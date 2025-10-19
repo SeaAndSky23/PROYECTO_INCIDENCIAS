@@ -94,5 +94,10 @@ namespace PROYECTO_INCIDENCIAS
             proceso.Show();
             this.Hide();
         }
+
+        private void dgvvisualincidencias_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

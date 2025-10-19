@@ -33,20 +33,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btadmuser = new System.Windows.Forms.PictureBox();
             this.dgvvisualincidencias = new System.Windows.Forms.DataGridView();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tsactualizar = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.tsatender = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.tssalir = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.tsvolver = new System.Windows.Forms.ToolStripLabel();
             this.num = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuari = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descrip = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ubicac = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechahora = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tsactualizar = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsatender = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsvolver = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.tssalir = new System.Windows.Forms.ToolStripLabel();
             this.btnreporproces = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btadmuser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvvisualincidencias)).BeginInit();
@@ -97,6 +97,40 @@
             this.dgvvisualincidencias.Name = "dgvvisualincidencias";
             this.dgvvisualincidencias.Size = new System.Drawing.Size(713, 268);
             this.dgvvisualincidencias.TabIndex = 5;
+            this.dgvvisualincidencias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvvisualincidencias_CellContentClick);
+            // 
+            // num
+            // 
+            this.num.HeaderText = "Nº";
+            this.num.Name = "num";
+            this.num.Width = 70;
+            // 
+            // usuari
+            // 
+            this.usuari.HeaderText = "USUARIO";
+            this.usuari.Name = "usuari";
+            this.usuari.Width = 120;
+            // 
+            // tipo
+            // 
+            this.tipo.HeaderText = "TIPO";
+            this.tipo.Name = "tipo";
+            // 
+            // descrip
+            // 
+            this.descrip.HeaderText = "DESCRIPCION";
+            this.descrip.Name = "descrip";
+            this.descrip.Width = 180;
+            // 
+            // ubicac
+            // 
+            this.ubicac.HeaderText = "UBICACION";
+            this.ubicac.Name = "ubicac";
+            // 
+            // fechahora
+            // 
+            this.fechahora.HeaderText = "FECHA Y HORA";
+            this.fechahora.Name = "fechahora";
             // 
             // toolStrip1
             // 
@@ -138,18 +172,6 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // tssalir
-            // 
-            this.tssalir.Name = "tssalir";
-            this.tssalir.Size = new System.Drawing.Size(37, 22);
-            this.tssalir.Text = "SALIR";
-            this.tssalir.Click += new System.EventHandler(this.tssalir_Click);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
-            // 
             // tsvolver
             // 
             this.tsvolver.Name = "tsvolver";
@@ -157,38 +179,17 @@
             this.tsvolver.Text = "VOLVER";
             this.tsvolver.Click += new System.EventHandler(this.tsvolver_Click);
             // 
-            // num
+            // toolStripSeparator3
             // 
-            this.num.HeaderText = "Nº";
-            this.num.Name = "num";
-            this.num.Width = 70;
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
             // 
-            // usuari
+            // tssalir
             // 
-            this.usuari.HeaderText = "USUARIO";
-            this.usuari.Name = "usuari";
-            this.usuari.Width = 120;
-            // 
-            // tipo
-            // 
-            this.tipo.HeaderText = "TIPO";
-            this.tipo.Name = "tipo";
-            // 
-            // descrip
-            // 
-            this.descrip.HeaderText = "DESCRIPCION";
-            this.descrip.Name = "descrip";
-            this.descrip.Width = 180;
-            // 
-            // ubicac
-            // 
-            this.ubicac.HeaderText = "UBICACION";
-            this.ubicac.Name = "ubicac";
-            // 
-            // fechahora
-            // 
-            this.fechahora.HeaderText = "FECHA Y HORA";
-            this.fechahora.Name = "fechahora";
+            this.tssalir.Name = "tssalir";
+            this.tssalir.Size = new System.Drawing.Size(37, 22);
+            this.tssalir.Text = "SALIR";
+            this.tssalir.Click += new System.EventHandler(this.tssalir_Click);
             // 
             // btnreporproces
             // 
