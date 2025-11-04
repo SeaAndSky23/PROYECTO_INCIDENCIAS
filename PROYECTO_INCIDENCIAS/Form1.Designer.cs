@@ -32,9 +32,7 @@ namespace PROYECTO_INCIDENCIAS
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.iscrearcuenta = new System.Windows.Forms.Label();
             this.isbtningresar = new System.Windows.Forms.Button();
@@ -43,50 +41,26 @@ namespace PROYECTO_INCIDENCIAS
             this.isusuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(201, 178);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(96, 70);
+            this.pictureBox1.Location = new System.Drawing.Point(393, 98);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(154, 162);
+            this.pictureBox1.Size = new System.Drawing.Size(174, 185);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LightBlue;
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.iscrearcuenta);
-            this.panel1.Controls.Add(this.isbtningresar);
-            this.panel1.Controls.Add(this.iscontrase);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.isusuario);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(231, 22);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(345, 437);
-            this.panel1.TabIndex = 2;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Showcard Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(63, 19);
+            this.label4.Font = new System.Drawing.Font("Book Antiqua", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
+            this.label4.Location = new System.Drawing.Point(350, 41);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(241, 33);
+            this.label4.Size = new System.Drawing.Size(269, 32);
             this.label4.TabIndex = 9;
             this.label4.Text = "JUNTOS TRUJILLO";
             // 
@@ -94,25 +68,25 @@ namespace PROYECTO_INCIDENCIAS
             // 
             this.iscrearcuenta.AutoSize = true;
             this.iscrearcuenta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iscrearcuenta.Font = new System.Drawing.Font("Segoe UI", 7F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.iscrearcuenta.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.iscrearcuenta.Location = new System.Drawing.Point(134, 404);
+            this.iscrearcuenta.Font = new System.Drawing.Font("Segoe UI", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.iscrearcuenta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
+            this.iscrearcuenta.Location = new System.Drawing.Point(431, 485);
             this.iscrearcuenta.Name = "iscrearcuenta";
-            this.iscrearcuenta.Size = new System.Drawing.Size(78, 12);
+            this.iscrearcuenta.Size = new System.Drawing.Size(88, 13);
             this.iscrearcuenta.TabIndex = 7;
             this.iscrearcuenta.Text = "CREAR CUENTA";
             this.iscrearcuenta.Click += new System.EventHandler(this.iscrearcuenta_Click);
             // 
             // isbtningresar
             // 
-            this.isbtningresar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.isbtningresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
             this.isbtningresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.isbtningresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.isbtningresar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.isbtningresar.ForeColor = System.Drawing.Color.White;
-            this.isbtningresar.Location = new System.Drawing.Point(136, 358);
+            this.isbtningresar.Location = new System.Drawing.Point(433, 429);
             this.isbtningresar.Name = "isbtningresar";
-            this.isbtningresar.Size = new System.Drawing.Size(76, 27);
+            this.isbtningresar.Size = new System.Drawing.Size(89, 34);
             this.isbtningresar.TabIndex = 6;
             this.isbtningresar.Text = "INGRESAR";
             this.isbtningresar.UseVisualStyleBackColor = false;
@@ -120,34 +94,38 @@ namespace PROYECTO_INCIDENCIAS
             // 
             // iscontrase
             // 
-            this.iscontrase.Location = new System.Drawing.Point(93, 320);
+            this.iscontrase.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iscontrase.Location = new System.Drawing.Point(379, 386);
             this.iscontrase.Name = "iscontrase";
             this.iscontrase.PasswordChar = '*';
-            this.iscontrase.Size = new System.Drawing.Size(171, 20);
+            this.iscontrase.Size = new System.Drawing.Size(202, 21);
             this.iscontrase.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(93, 304);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(379, 365);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 13);
+            this.label3.Size = new System.Drawing.Size(88, 15);
             this.label3.TabIndex = 4;
             this.label3.Text = "CONTRASEÑA";
             // 
             // isusuario
             // 
-            this.isusuario.Location = new System.Drawing.Point(93, 264);
+            this.isusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isusuario.Location = new System.Drawing.Point(379, 326);
             this.isusuario.Name = "isusuario";
-            this.isusuario.Size = new System.Drawing.Size(171, 20);
+            this.isusuario.Size = new System.Drawing.Size(202, 21);
             this.isusuario.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(93, 246);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(379, 307);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.Size = new System.Drawing.Size(61, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "USUARIO";
             // 
@@ -156,26 +134,27 @@ namespace PROYECTO_INCIDENCIAS
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(794, 491);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(929, 571);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.iscrearcuenta);
+            this.Controls.Add(this.isbtningresar);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.iscontrase);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.isusuario);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "INICIO SESION";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Label label1;
         private PictureBox pictureBox1;
-        private Panel panel1;
         private TextBox iscontrase;
         private Label label3;
         private TextBox isusuario;

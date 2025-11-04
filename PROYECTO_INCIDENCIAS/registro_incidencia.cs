@@ -25,13 +25,25 @@ namespace PROYECTO_INCIDENCIAS
             registroProblema.Usuario = usuarioActual;
             registroProblema.Tipo = cb_TipoIncidencia.Text;
             registroProblema.Descripcion = tb_DescripcionProblema.Text;
-            registroProblema.Ubicacion = tb_Ubicacion.Text;
+            registroProblema.Ubicacion = tb_Ubicacion.Text + ", " + cbdistrito.Text;
             registroProblema.FechaHora = DateTime.Now;
             MessageBox.Show("Reporte enviado correctamente");
             Program.ColaReportesGLOBAL.Encolar(registroProblema);
+
+            string ubicacionFinal = tb_Ubicacion.Text;
+
+            if (!string.IsNullOrWhiteSpace(cbdistrito.Text))
+            {
+                if (!string.IsNullOrWhiteSpace(ubicacionFinal))
+                    ubicacionFinal += ", ";
+                ubicacionFinal += cbdistrito.Text;
+            }
+
+            registroProblema.Ubicacion = ubicacionFinal;
+
         }
 
-        private void btnvolver_Click(object sender, EventArgs e)
+        private void btnvolver_Click_1(object sender, EventArgs e)
         {
             inicio_usuario usuario = new inicio_usuario(usuarioActual);
             usuario.Show();

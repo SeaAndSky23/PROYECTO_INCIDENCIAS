@@ -57,52 +57,65 @@ namespace PROYECTO_INCIDENCIAS
 
         private void tsfinalizardia_Click(object sender, EventArgs e)
         {
-            if (Program.PilaReportesGlobal.Inicio == null)
+            string carpetaReportes = Path.Combine(Application.StartupPath, "Reportes");
+            if (!Directory.Exists(carpetaReportes))
             {
-                MessageBox.Show("No hay reportes finalizados.");
+                Directory.CreateDirectory(carpetaReportes);
             }
-            else
+
+            // Crear archivo con fecha y hora
+            string nombreArchivo = $"ReporteDiario_{DateTime.Now:yyyy-MM-dd-HH-mm}.txt";
+            string rutaArchivo = Path.Combine(carpetaReportes, nombreArchivo);
+
+            using (TextWriter archivo = new StreamWriter(rutaArchivo, true))
             {
-                // Crear carpeta dentro del proyecto si no existe
-                string carpetaReportes = Path.Combine(Application.StartupPath, "Reportes");
-                if (!Directory.Exists(carpetaReportes))
+                archivo.WriteLine("******************** REPORTE DIARIO ********************");
+                archivo.WriteLine("Fecha de exportación: " + DateTime.Now);
+                archivo.WriteLine();
+
+                // 1. Reportes finalizados
+                archivo.WriteLine("---- REPORTES FINALIZADOS ----");
+                Nodo actual = Program.PilaReportesGlobal.Inicio;
+                int i = 0;
+                while (actual != null)
                 {
-                    Directory.CreateDirectory(carpetaReportes);
+                    i++;
+                    archivo.WriteLine($"[{i}] Usuario: {actual.dato.Usuario}");
+                    archivo.WriteLine("Tipo: " + actual.dato.Tipo);
+                    archivo.WriteLine("Descripción: " + actual.dato.Descripcion);
+                    archivo.WriteLine("Ubicación: " + actual.dato.Ubicacion);
+                    archivo.WriteLine("Fecha del reporte: " + actual.dato.FechaHora);
+                    archivo.WriteLine("---------------------------------------------------");
+                    actual = actual.siguiente;
                 }
+                archivo.WriteLine($"Total reportes finalizados: {i}");
+                archivo.WriteLine();
 
-                // Crear archivo con fecha y hora
-                string nombreArchivo = $"ReportesFinalizados_{DateTime.Now:yyyy-MM-dd-HH-mm}.txt";
-                string rutaArchivo = Path.Combine(carpetaReportes, nombreArchivo);
-
-                using (TextWriter FINALIZADOS = new StreamWriter(rutaArchivo, true))
+                // 2. Reportes pendientes
+                archivo.WriteLine("---- REPORTES PENDIENTES ----");
+                actual = Program.ColaReportesGLOBAL.Inicio;
+                int j = 0;
+                while (actual != null)
                 {
-                    FINALIZADOS.WriteLine("******************** REPORTES FINALIZADOS ********************");
-                    FINALIZADOS.WriteLine("Fecha de exportación: " + DateTime.Now);
-                    FINALIZADOS.WriteLine();
-
-                    Nodo actual = Program.PilaReportesGlobal.Inicio;
-                    int i = 0;
-                    while (actual != null)
-                    {
-                        FINALIZADOS.WriteLine($"[{i + 1}]");
-                        FINALIZADOS.WriteLine("Usuario: " + actual.dato.Usuario);
-                        FINALIZADOS.WriteLine("Tipo de problema: " + actual.dato.Tipo);
-                        FINALIZADOS.WriteLine("Descripción: " + actual.dato.Descripcion);
-                        FINALIZADOS.WriteLine("Ubicación: " + actual.dato.Ubicacion);
-                        FINALIZADOS.WriteLine("Fecha del reporte: " + actual.dato.FechaHora);
-                        FINALIZADOS.WriteLine("------------------------------------------------------------");
-                        FINALIZADOS.WriteLine();
-                        actual = actual.siguiente;
-                        i++;
-                    }
-
-                    FINALIZADOS.WriteLine("Número total de reportes finalizados con éxito: " + i);
-                    FINALIZADOS.WriteLine("***************************************************************");
+                    j++;
+                    archivo.WriteLine($"[{j}] Usuario: {actual.dato.Usuario}");
+                    archivo.WriteLine("Tipo: " + actual.dato.Tipo);
+                    archivo.WriteLine("Descripción: " + actual.dato.Descripcion);
+                    archivo.WriteLine("Ubicación: " + actual.dato.Ubicacion);
+                    archivo.WriteLine("Fecha del reporte: " + actual.dato.FechaHora);
+                    archivo.WriteLine("---------------------------------------------------");
+                    actual = actual.siguiente;
                 }
-
-                MessageBox.Show($"Archivo guardado en: {rutaArchivo}");
-                dgvincifinalizadas.Rows.Clear();
+                archivo.WriteLine($"Total reportes pendientes: {j}");
+                archivo.WriteLine("********************************************************");
             }
+
+            MessageBox.Show($"Reporte diario guardado en: {rutaArchivo}");
+
+            // Limpiar DataGridViews y estructuras para el siguiente día
+            dgvincifinalizadas.Rows.Clear();
+            Program.PilaReportesGlobal = new PilaReportes();  // Reinicia pila
+            Program.ColaReportesGLOBAL = new ColaReportes();  // Reinicia cola
         }
     }
 }

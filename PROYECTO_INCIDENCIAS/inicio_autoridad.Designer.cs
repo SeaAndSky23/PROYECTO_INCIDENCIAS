@@ -56,10 +56,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Book Antiqua", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
             this.label1.Location = new System.Drawing.Point(275, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 26);
+            this.label1.Size = new System.Drawing.Size(277, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "SISTEMA DE MONITOREO";
             // 
@@ -193,10 +194,10 @@
             // 
             // btnreporproces
             // 
-            this.btnreporproces.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnreporproces.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
             this.btnreporproces.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnreporproces.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnreporproces.ForeColor = System.Drawing.Color.Black;
+            this.btnreporproces.ForeColor = System.Drawing.Color.White;
             this.btnreporproces.Location = new System.Drawing.Point(638, 398);
             this.btnreporproces.Name = "btnreporproces";
             this.btnreporproces.Size = new System.Drawing.Size(150, 40);
@@ -209,6 +210,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnreporproces);
             this.Controls.Add(this.toolStrip1);
