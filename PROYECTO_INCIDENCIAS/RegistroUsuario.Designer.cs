@@ -46,7 +46,8 @@ namespace PROYECTO_INCIDENCIAS
             this.label2 = new System.Windows.Forms.Label();
             this.tbusuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnvolver = new System.Windows.Forms.Button();
+            this.btnvolver3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btnvolver3)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNombre
@@ -186,17 +187,17 @@ namespace PROYECTO_INCIDENCIAS
             this.label1.TabIndex = 12;
             this.label1.Text = "JUNTOS TRUJILLO";
             // 
-            // btnvolver
+            // btnvolver3
             // 
-            this.btnvolver.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnvolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnvolver.Location = new System.Drawing.Point(25, 17);
-            this.btnvolver.Name = "btnvolver";
-            this.btnvolver.Size = new System.Drawing.Size(75, 23);
-            this.btnvolver.TabIndex = 13;
-            this.btnvolver.Text = "VOLVER";
-            this.btnvolver.UseVisualStyleBackColor = true;
-            this.btnvolver.Click += new System.EventHandler(this.btnvolver_Click);
+            this.btnvolver3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnvolver3.Image = ((System.Drawing.Image)(resources.GetObject("btnvolver3.Image")));
+            this.btnvolver3.Location = new System.Drawing.Point(12, 12);
+            this.btnvolver3.Name = "btnvolver3";
+            this.btnvolver3.Size = new System.Drawing.Size(44, 50);
+            this.btnvolver3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnvolver3.TabIndex = 14;
+            this.btnvolver3.TabStop = false;
+            this.btnvolver3.Click += new System.EventHandler(this.btnvolver3_Click);
             // 
             // RegistroUsuario
             // 
@@ -204,8 +205,8 @@ namespace PROYECTO_INCIDENCIAS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(834, 511);
+            this.Controls.Add(this.btnvolver3);
             this.Controls.Add(this.tbcontra);
-            this.Controls.Add(this.btnvolver);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -223,6 +224,7 @@ namespace PROYECTO_INCIDENCIAS
             this.Name = "RegistroUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistroUsuario";
+            ((System.ComponentModel.ISupportInitialize)(this.btnvolver3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,6 +246,6 @@ namespace PROYECTO_INCIDENCIAS
         private TextBox tbusuario;
         private TextBox tbcontra;
         private Label label3;
-        private Button btnvolver;
+        private PictureBox btnvolver3;
     }
 }

@@ -21,26 +21,15 @@ namespace PROYECTO_INCIDENCIAS
 
         private void btnenviarep_Click(object sender, EventArgs e)
         {
-            RegistroProblema registroProblema = new RegistroProblema();
-            registroProblema.Usuario = usuarioActual;
-            registroProblema.Tipo = cb_TipoIncidencia.Text;
-            registroProblema.Descripcion = tb_DescripcionProblema.Text;
-            registroProblema.Ubicacion = tb_Ubicacion.Text + ", " + cbdistrito.Text;
-            registroProblema.FechaHora = DateTime.Now;
+            string usuario = usuarioActual;
+            string tipo = cb_TipoIncidencia.Text;
+            string descripcion = tb_DescripcionProblema.Text;
+            string ubicacion = tb_Ubicacion.Text;
+            DateTime fechaHora = DateTime.Now;
+            RegistroProblema registroproblema = new RegistroProblema(usuario, tipo, descripcion, ubicacion, fechaHora);
+            registroproblema.Estado_Reporte = false;
+            Program.ColaReportesGLOBAL.Encolar(registroproblema);
             MessageBox.Show("Reporte enviado correctamente");
-            Program.ColaReportesGLOBAL.Encolar(registroProblema);
-
-            string ubicacionFinal = tb_Ubicacion.Text;
-
-            if (!string.IsNullOrWhiteSpace(cbdistrito.Text))
-            {
-                if (!string.IsNullOrWhiteSpace(ubicacionFinal))
-                    ubicacionFinal += ", ";
-                ubicacionFinal += cbdistrito.Text;
-            }
-
-            registroProblema.Ubicacion = ubicacionFinal;
-
         }
 
         private void btnvolver_Click_1(object sender, EventArgs e)

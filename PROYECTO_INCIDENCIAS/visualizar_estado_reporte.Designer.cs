@@ -120,6 +120,7 @@
             // 
             // btnvolver2
             // 
+            this.btnvolver2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnvolver2.Image = ((System.Drawing.Image)(resources.GetObject("btnvolver2.Image")));
             this.btnvolver2.Location = new System.Drawing.Point(873, 12);
             this.btnvolver2.Name = "btnvolver2";

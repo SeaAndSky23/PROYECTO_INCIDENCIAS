@@ -70,17 +70,17 @@
             this.cb_TipoIncidencia.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cb_TipoIncidencia.FormattingEnabled = true;
             this.cb_TipoIncidencia.Items.AddRange(new object[] {
-            "Accidentes de tráfico (peatonales, vehiculares)",
-            "Incendios (estructurales, naturales)",
-            "Delitos (robos, hurtos, vandalismo, asaltos)",
-            "Deficiencias en la vía pública (baches, aceras rotas, mobiliario urbano dañado)",
-            "Problemas con servicios urbanos (alumbrado público, limpieza y gestión de residuo" +
-                "s)",
-            "Plagas sanitarias",
-            "Averías en la red de agua o alcantarillado",
-            "Problemas con el arbolado y jardinería (ramas caídas, riego, poda)",
-            "Actividades de manifestación o disturbios",
-            "Incidentes de bienestar animal"});
+            "ACCIDENTES DE TRÁFICO (PEATONALES, VEHICULARES)",
+            "INCENDIOS (ESTRUCTURALES, NATURALES)",
+            "DELITOS (ROBOS, HURTOS, VANDALISMO, ASALTOS)",
+            "ACTIVIDADES DE MANIFESTACIÓN O DISTURBIOS",
+            "DEFICIENCIAS EN LA VÍA PÚBLICA (BACHES, ACERAS ROTAS, MOBILIARIO URBANO DAÑADO)",
+            "AVERÍAS EN LA RED DE AGUA O ALCANTARILLADO",
+            "INCIDENTES DE BIENESTAR ANIMAL",
+            "PROBLEMAS CON SERVICIOS URBANOS (ALUMBRADO PÚBLICO, LIMPIEZA Y GESTIÓN DE RESIDUO" +
+                "S)",
+            "PLAGAS SANITARIAS",
+            "PROBLEMAS CON EL ARBOLADO Y JARDINERÍA (RAMAS CAÍDAS, RIEGO, PODA)"});
             this.cb_TipoIncidencia.Location = new System.Drawing.Point(357, 124);
             this.cb_TipoIncidencia.Name = "cb_TipoIncidencia";
             this.cb_TipoIncidencia.Size = new System.Drawing.Size(349, 21);
@@ -117,7 +117,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(120, 279);
+            this.label4.Location = new System.Drawing.Point(120, 276);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 17);
             this.label4.TabIndex = 5;
@@ -142,7 +142,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(120, 324);
+            this.label5.Location = new System.Drawing.Point(120, 323);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 17);
             this.label5.TabIndex = 9;
@@ -176,15 +176,16 @@
             "SALAVERRY",
             "SIMBAL",
             "VÍCTOR LARCO"});
-            this.cbdistrito.Location = new System.Drawing.Point(123, 360);
+            this.cbdistrito.Location = new System.Drawing.Point(123, 359);
             this.cbdistrito.Name = "cbdistrito";
             this.cbdistrito.Size = new System.Drawing.Size(191, 21);
             this.cbdistrito.TabIndex = 11;
             // 
             // btnvolver
             // 
+            this.btnvolver.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnvolver.Image = ((System.Drawing.Image)(resources.GetObject("btnvolver.Image")));
-            this.btnvolver.Location = new System.Drawing.Point(768, 477);
+            this.btnvolver.Location = new System.Drawing.Point(12, 12);
             this.btnvolver.Name = "btnvolver";
             this.btnvolver.Size = new System.Drawing.Size(44, 50);
             this.btnvolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

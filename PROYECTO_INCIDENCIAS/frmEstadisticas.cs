@@ -18,5 +18,12 @@ namespace PROYECTO_INCIDENCIAS
         {
             InitializeComponent();
         }
+
+        private void btnvolver4_Click(object sender, EventArgs e)
+        {
+            inicio_usuario usuarioinicio = new inicio_usuario("");
+            usuarioinicio.Show();
+            this.Close();
+        }
     }
 }

@@ -3,14 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static PROYECTO_INCIDENCIAS.ColaReportes;
 
 namespace PROYECTO_INCIDENCIAS
 {
     internal static class Program
     {
+        // Instancias globales accesibles en toda la aplicación
         public static ColaReportes ColaReportesGLOBAL = new ColaReportes();
-        public static ListaEnlazadaReportesAtendidos ListaReportesGlobal = new ListaEnlazadaReportesAtendidos();
-        public static PilaReportes PilaReportesGlobal = new PilaReportes();
+
+        // 🔴 Aquí está la corrección:
+        // Como las clases están anidadas dentro de ColaReportes,
+        // debes anteponer "ColaReportes."
+        public static ColaReportes.ListaEnlazadaReportesAtendidos ListaReportesGlobal = new ColaReportes.ListaEnlazadaReportesAtendidos();
+        public static ColaReportes.PilaReportes PilaReportesGlobal = new ColaReportes.PilaReportes();
+
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
