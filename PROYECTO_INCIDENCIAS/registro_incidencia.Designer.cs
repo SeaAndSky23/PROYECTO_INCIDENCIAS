@@ -41,6 +41,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.cbdistrito = new System.Windows.Forms.ComboBox();
             this.btnvolver = new System.Windows.Forms.PictureBox();
+            this.tb_comentarios = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnvolver)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +61,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(219, 140);
+            this.label2.Location = new System.Drawing.Point(229, 109);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 17);
             this.label2.TabIndex = 1;
@@ -81,7 +83,7 @@
                 "S)",
             "PLAGAS SANITARIAS",
             "PROBLEMAS CON EL ARBOLADO Y JARDINERÍA (RAMAS CAÍDAS, RIEGO, PODA)"});
-            this.cb_TipoIncidencia.Location = new System.Drawing.Point(456, 140);
+            this.cb_TipoIncidencia.Location = new System.Drawing.Point(466, 109);
             this.cb_TipoIncidencia.Name = "cb_TipoIncidencia";
             this.cb_TipoIncidencia.Size = new System.Drawing.Size(349, 21);
             this.cb_TipoIncidencia.TabIndex = 2;
@@ -90,7 +92,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(219, 206);
+            this.label3.Location = new System.Drawing.Point(229, 175);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(211, 17);
             this.label3.TabIndex = 3;
@@ -99,7 +101,7 @@
             // tb_DescripcionProblema
             // 
             this.tb_DescripcionProblema.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_DescripcionProblema.Location = new System.Drawing.Point(456, 205);
+            this.tb_DescripcionProblema.Location = new System.Drawing.Point(466, 174);
             this.tb_DescripcionProblema.Multiline = true;
             this.tb_DescripcionProblema.Name = "tb_DescripcionProblema";
             this.tb_DescripcionProblema.Size = new System.Drawing.Size(349, 69);
@@ -108,7 +110,7 @@
             // tb_Ubicacion
             // 
             this.tb_Ubicacion.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Ubicacion.Location = new System.Drawing.Point(492, 376);
+            this.tb_Ubicacion.Location = new System.Drawing.Point(466, 345);
             this.tb_Ubicacion.Name = "tb_Ubicacion";
             this.tb_Ubicacion.Size = new System.Drawing.Size(313, 20);
             this.tb_Ubicacion.TabIndex = 6;
@@ -117,7 +119,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(219, 292);
+            this.label4.Location = new System.Drawing.Point(229, 274);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 17);
             this.label4.TabIndex = 5;
@@ -130,7 +132,7 @@
             this.btnenviarep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnenviarep.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnenviarep.ForeColor = System.Drawing.Color.White;
-            this.btnenviarep.Location = new System.Drawing.Point(481, 468);
+            this.btnenviarep.Location = new System.Drawing.Point(434, 578);
             this.btnenviarep.Name = "btnenviarep";
             this.btnenviarep.Size = new System.Drawing.Size(95, 35);
             this.btnenviarep.TabIndex = 7;
@@ -142,7 +144,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(219, 339);
+            this.label5.Location = new System.Drawing.Point(229, 308);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 17);
             this.label5.TabIndex = 9;
@@ -152,7 +154,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(489, 340);
+            this.label6.Location = new System.Drawing.Point(463, 308);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(176, 17);
             this.label6.TabIndex = 10;
@@ -176,7 +178,7 @@
             "SALAVERRY",
             "SIMBAL",
             "VÍCTOR LARCO"});
-            this.cbdistrito.Location = new System.Drawing.Point(222, 375);
+            this.cbdistrito.Location = new System.Drawing.Point(232, 344);
             this.cbdistrito.Name = "cbdistrito";
             this.cbdistrito.Size = new System.Drawing.Size(191, 21);
             this.cbdistrito.TabIndex = 11;
@@ -193,12 +195,33 @@
             this.btnvolver.TabStop = false;
             this.btnvolver.Click += new System.EventHandler(this.btnvolver_Click_1);
             // 
+            // tb_comentarios
+            // 
+            this.tb_comentarios.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_comentarios.Location = new System.Drawing.Point(466, 422);
+            this.tb_comentarios.Multiline = true;
+            this.tb_comentarios.Name = "tb_comentarios";
+            this.tb_comentarios.Size = new System.Drawing.Size(307, 104);
+            this.tb_comentarios.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(229, 413);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(109, 17);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "COMENTARIOS";
+            // 
             // registro_incidencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(984, 601);
+            this.ClientSize = new System.Drawing.Size(984, 641);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.tb_comentarios);
             this.Controls.Add(this.btnvolver);
             this.Controls.Add(this.cbdistrito);
             this.Controls.Add(this.label6);
@@ -235,5 +258,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbdistrito;
         private System.Windows.Forms.PictureBox btnvolver;
+        private System.Windows.Forms.TextBox tb_comentarios;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -39,6 +39,7 @@
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comentarios = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_estado_reporte)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnact)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnvolver2)).BeginInit();
@@ -49,7 +50,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Britannic Bold", 17.25F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
-            this.label1.Location = new System.Drawing.Point(340, 20);
+            this.label1.Location = new System.Drawing.Point(415, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(240, 26);
             this.label1.TabIndex = 0;
@@ -64,10 +65,11 @@
             this.tipo,
             this.descripcion,
             this.fecha,
-            this.estado});
+            this.estado,
+            this.comentarios});
             this.dgv_estado_reporte.Location = new System.Drawing.Point(12, 88);
             this.dgv_estado_reporte.Name = "dgv_estado_reporte";
-            this.dgv_estado_reporte.Size = new System.Drawing.Size(960, 441);
+            this.dgv_estado_reporte.Size = new System.Drawing.Size(1106, 441);
             this.dgv_estado_reporte.TabIndex = 1;
             // 
             // btnact
@@ -86,7 +88,7 @@
             // 
             this.btnvolver2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnvolver2.Image = ((System.Drawing.Image)(resources.GetObject("btnvolver2.Image")));
-            this.btnvolver2.Location = new System.Drawing.Point(928, 12);
+            this.btnvolver2.Location = new System.Drawing.Point(1074, 5);
             this.btnvolver2.Name = "btnvolver2";
             this.btnvolver2.Size = new System.Drawing.Size(44, 50);
             this.btnvolver2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -130,12 +132,18 @@
             this.estado.Name = "estado";
             this.estado.Width = 150;
             // 
+            // comentarios
+            // 
+            this.comentarios.HeaderText = "COMENTARIOS";
+            this.comentarios.Name = "comentarios";
+            this.comentarios.Width = 180;
+            // 
             // visualizar_estado_reporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(984, 601);
+            this.ClientSize = new System.Drawing.Size(1130, 601);
             this.Controls.Add(this.btnvolver2);
             this.Controls.Add(this.btnact);
             this.Controls.Add(this.dgv_estado_reporte);
@@ -164,5 +172,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn estado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn comentarios;
     }
 }

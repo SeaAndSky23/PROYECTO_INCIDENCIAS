@@ -25,14 +25,15 @@ namespace PROYECTO_INCIDENCIAS
             string tipo = cb_TipoIncidencia.Text;
             string descripcion = tb_DescripcionProblema.Text;
             string ubicacion = cbdistrito.Text + " , " + tb_Ubicacion.Text;
+            string comentarios = tb_comentarios.Text;
             DateTime fechaHora = DateTime.Now;
-            RegistroProblema registroproblema = new RegistroProblema(usuario, tipo, descripcion, ubicacion, fechaHora);
+            RegistroProblema registroproblema = new RegistroProblema(usuario, tipo, descripcion, ubicacion, fechaHora, comentarios);
             registroproblema.Estado_Reporte = false;
             Program.ColaReportesGLOBAL.Encolar(registroproblema);
             MessageBox.Show("Reporte enviado correctamente");
             cb_TipoIncidencia.SelectedIndex = -1;
-            tb_DescripcionProblema.Clear();       
-            cbdistrito.SelectedIndex = -1;       
+            tb_DescripcionProblema.Clear();
+            cbdistrito.SelectedIndex = -1;
             tb_Ubicacion.Clear();
         }
 

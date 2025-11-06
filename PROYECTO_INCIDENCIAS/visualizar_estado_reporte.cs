@@ -30,9 +30,10 @@ namespace PROYECTO_INCIDENCIAS
             {
                 if (actual.dato.Usuario == usuarioactual)
                 {
+                    string comentario = "En espera de respuesta y atención";
                     i++;
                     mostrar_estado = "EN ESPERA";
-                    dgv_estado_reporte.Rows.Add(i, actual.dato.Usuario, actual.dato.Tipo, actual.dato.Descripcion, actual.dato.FechaHora.ToString("dd/MM/yyyy HH:mm:ss"), mostrar_estado);
+                    dgv_estado_reporte.Rows.Add(i, actual.dato.Usuario, actual.dato.Tipo, actual.dato.Descripcion, actual.dato.FechaHora.ToString("dd/MM/yyyy HH:mm:ss"), mostrar_estado, comentario);
                 }
                 actual = actual.siguiente;
             }
@@ -41,9 +42,12 @@ namespace PROYECTO_INCIDENCIAS
             {
                 if (este.dato.Usuario == usuarioactual)
                 {
+                    string comentario_2 = string.IsNullOrWhiteSpace(este.dato.Comentario_enproceso)
+                ? "Tu reporte está siendo procesado por las autoridades."
+                : "Tu reporte está siendo procesado: " + este.dato.Comentario_enproceso;
                     i++;
                     mostrar_estado = "EN PROCESO";
-                    dgv_estado_reporte.Rows.Add(i, este.dato.Usuario, este.dato.Tipo, este.dato.Descripcion, este.dato.FechaHora.ToString("dd/MM/yyyy HH:mm:ss"), mostrar_estado);
+                    dgv_estado_reporte.Rows.Add(i, este.dato.Usuario, este.dato.Tipo, este.dato.Descripcion, este.dato.FechaHora.ToString("dd/MM/yyyy HH:mm:ss"), mostrar_estado, comentario_2);
                 }
                 este = este.siguiente;
             }
@@ -52,11 +56,28 @@ namespace PROYECTO_INCIDENCIAS
             {
                 if (yo.dato.Usuario == usuarioactual)
                 {
+                    string comentario_3 = string.IsNullOrWhiteSpace(yo.dato.Comentario_finalizado)
+                ? "El problema ha sido solucionado satisfactoriamente."
+                : "ATENCIÓN: " + yo.dato.Comentario_finalizado;
                     i++;
                     mostrar_estado = "SOLUCIONADO";
-                    dgv_estado_reporte.Rows.Add(i, yo.dato.Usuario, yo.dato.Tipo, yo.dato.Descripcion, yo.dato.FechaHora.ToString("dd/MM/yyyy HH:mm:ss"), mostrar_estado);
+                    dgv_estado_reporte.Rows.Add(i, yo.dato.Usuario, yo.dato.Tipo, yo.dato.Descripcion, yo.dato.FechaHora.ToString("dd/MM/yyyy HH:mm:ss"), mostrar_estado, comentario_3);
                 }
                 yo = yo.siguiente;
+            }
+            Nodo mi = Program.Lista___Eliminados_Global.Inicio;
+            while (mi != null)
+            {
+                if (mi.dato.Usuario == usuarioactual)
+                {
+                    string comentario_4 = string.IsNullOrWhiteSpace(mi.dato.Comentario_Eliminado)
+                ? "Tu reporte fue eliminado por el administrador."
+                : "TU ENVÍO FUE ELIMINADO, " + mi.dato.Comentario_Eliminado;
+                    i++;
+                    mostrar_estado = "ELIMINADO";
+                    dgv_estado_reporte.Rows.Add(i, mi.dato.Usuario, mi.dato.Tipo, mi.dato.Descripcion, mi.dato.FechaHora.ToString("dd/MM/yyyy HH:mm:ss"), mostrar_estado, comentario_4);
+                }
+                mi = mi.siguiente;
             }
         }
 

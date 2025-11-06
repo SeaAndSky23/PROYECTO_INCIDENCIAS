@@ -15,8 +15,13 @@ namespace PROYECTO_INCIDENCIAS
         public DateTime FechaHora { get; set; }
         public int riesgo { get; set; }
         public bool Estado_Reporte { get; set; }
+        public string Comentarios { get; set; }
+        public string Comentario_espera { get; set; }
+        public string Comentario_enproceso { get; set; }
+        public string Comentario_finalizado { get; set; }
+        public string Comentario_Eliminado { get; set; }
 
-        public RegistroProblema(string usuario, string tipo, string descripcion, string ubicacion, DateTime fechaHora)
+        public RegistroProblema(string usuario, string tipo, string descripcion, string ubicacion, DateTime fechaHora, string comentarios)
         {
             Usuario = usuario;
             Tipo = tipo;
@@ -44,6 +49,7 @@ namespace PROYECTO_INCIDENCIAS
             Descripcion = descripcion;
             Ubicacion = ubicacion;
             FechaHora = fechaHora;
+            Comentarios = comentarios;
         }
     }
 }
