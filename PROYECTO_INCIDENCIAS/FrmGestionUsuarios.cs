@@ -156,7 +156,7 @@ namespace PROYECTO_INCIDENCIAS
             MessageBox.Show("Lista actualizada.");
         }
 
-        private void btnregresar_Click(object sender, EventArgs e)
+        private void btnvolver4_Click(object sender, EventArgs e)
         {
             inicio_autoridad inicio = new inicio_autoridad();
             inicio.Show();

@@ -60,30 +60,43 @@ namespace PROYECTO_INCIDENCIAS
         public RegistroProblema EliminarPorDatos(string usuario, string tipo, string descripcion, string ubicacion, string fecha, int riesgo)
         {
             if (Inicio == null) return null;
+
             Nodo actual = Inicio;
             Nodo anterior = null;
+
+            // Normalizar la fecha del DataGridView
+            DateTime fechaComparar;
+            DateTime.TryParse(fecha, out fechaComparar);
+
             while (actual != null)
             {
-                if (actual.dato.Usuario == usuario && actual.dato.Tipo == tipo && actual.dato.Descripcion == descripcion && actual.dato.Ubicacion == ubicacion && actual.dato.FechaHora.ToString() == fecha && actual.dato.riesgo == riesgo)
+                // Comparación robusta, ignorando mayúsculas, espacios y formato de fecha
+                bool coincide =
+                    string.Equals(actual.dato.Usuario?.Trim(), usuario?.Trim(), StringComparison.OrdinalIgnoreCase) &&
+                    string.Equals(actual.dato.Tipo?.Trim(), tipo?.Trim(), StringComparison.OrdinalIgnoreCase) &&
+                    string.Equals(actual.dato.Descripcion?.Trim(), descripcion?.Trim(), StringComparison.OrdinalIgnoreCase) &&
+                    string.Equals(actual.dato.Ubicacion?.Trim(), ubicacion?.Trim(), StringComparison.OrdinalIgnoreCase) &&
+                    actual.dato.riesgo == riesgo &&
+                    Math.Abs((actual.dato.FechaHora - fechaComparar).TotalSeconds) < 2; // margen de 2 segundos
+
+                if (coincide)
                 {
+                    // Eliminar el nodo
                     if (anterior == null)
-                    {
                         Inicio = Inicio.siguiente;
-                    }
                     else
-                    {
                         anterior.siguiente = actual.siguiente;
-                    }
+
                     if (actual == Fin)
-                    {
                         Fin = anterior;
-                    }
 
                     return actual.dato;
                 }
+
                 anterior = actual;
                 actual = actual.siguiente;
             }
+
             return null;
         }
 

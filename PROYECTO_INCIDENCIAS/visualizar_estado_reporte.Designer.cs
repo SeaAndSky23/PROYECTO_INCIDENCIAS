@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(visualizar_estado_reporte));
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_estado_reporte = new System.Windows.Forms.DataGridView();
+            this.btnact = new System.Windows.Forms.PictureBox();
+            this.btnvolver2 = new System.Windows.Forms.PictureBox();
             this.numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnact = new System.Windows.Forms.PictureBox();
-            this.btnvolver2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_estado_reporte)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnact)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnvolver2)).BeginInit();
@@ -49,7 +49,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Britannic Bold", 17.25F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
-            this.label1.Location = new System.Drawing.Point(311, 20);
+            this.label1.Location = new System.Drawing.Point(340, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(240, 26);
             this.label1.TabIndex = 0;
@@ -67,44 +67,8 @@
             this.estado});
             this.dgv_estado_reporte.Location = new System.Drawing.Point(12, 88);
             this.dgv_estado_reporte.Name = "dgv_estado_reporte";
-            this.dgv_estado_reporte.Size = new System.Drawing.Size(905, 441);
+            this.dgv_estado_reporte.Size = new System.Drawing.Size(960, 441);
             this.dgv_estado_reporte.TabIndex = 1;
-            // 
-            // numero
-            // 
-            this.numero.HeaderText = "NUMERO";
-            this.numero.Name = "numero";
-            this.numero.Width = 70;
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "NOMBRE";
-            this.nombre.Name = "nombre";
-            this.nombre.Width = 140;
-            // 
-            // tipo
-            // 
-            this.tipo.HeaderText = "TIPO";
-            this.tipo.Name = "tipo";
-            this.tipo.Width = 130;
-            // 
-            // descripcion
-            // 
-            this.descripcion.HeaderText = "DESCRIPCION";
-            this.descripcion.Name = "descripcion";
-            this.descripcion.Width = 220;
-            // 
-            // fecha
-            // 
-            this.fecha.HeaderText = "FECHA";
-            this.fecha.Name = "fecha";
-            this.fecha.Width = 150;
-            // 
-            // estado
-            // 
-            this.estado.HeaderText = "ESTADO";
-            this.estado.Name = "estado";
-            this.estado.Width = 140;
             // 
             // btnact
             // 
@@ -122,7 +86,7 @@
             // 
             this.btnvolver2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnvolver2.Image = ((System.Drawing.Image)(resources.GetObject("btnvolver2.Image")));
-            this.btnvolver2.Location = new System.Drawing.Point(873, 12);
+            this.btnvolver2.Location = new System.Drawing.Point(928, 12);
             this.btnvolver2.Name = "btnvolver2";
             this.btnvolver2.Size = new System.Drawing.Size(44, 50);
             this.btnvolver2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -130,12 +94,48 @@
             this.btnvolver2.TabStop = false;
             this.btnvolver2.Click += new System.EventHandler(this.btnvolver2_Click);
             // 
+            // numero
+            // 
+            this.numero.HeaderText = "NUMERO";
+            this.numero.Name = "numero";
+            this.numero.Width = 70;
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "NOMBRE";
+            this.nombre.Name = "nombre";
+            this.nombre.Width = 150;
+            // 
+            // tipo
+            // 
+            this.tipo.HeaderText = "TIPO";
+            this.tipo.Name = "tipo";
+            this.tipo.Width = 150;
+            // 
+            // descripcion
+            // 
+            this.descripcion.HeaderText = "DESCRIPCION";
+            this.descripcion.Name = "descripcion";
+            this.descripcion.Width = 220;
+            // 
+            // fecha
+            // 
+            this.fecha.HeaderText = "FECHA";
+            this.fecha.Name = "fecha";
+            this.fecha.Width = 150;
+            // 
+            // estado
+            // 
+            this.estado.HeaderText = "ESTADO";
+            this.estado.Name = "estado";
+            this.estado.Width = 150;
+            // 
             // visualizar_estado_reporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(929, 571);
+            this.ClientSize = new System.Drawing.Size(984, 601);
             this.Controls.Add(this.btnvolver2);
             this.Controls.Add(this.btnact);
             this.Controls.Add(this.dgv_estado_reporte);
@@ -156,13 +156,13 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgv_estado_reporte;
+        private System.Windows.Forms.PictureBox btnact;
+        private System.Windows.Forms.PictureBox btnvolver2;
         private System.Windows.Forms.DataGridViewTextBoxColumn numero;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn estado;
-        private System.Windows.Forms.PictureBox btnact;
-        private System.Windows.Forms.PictureBox btnvolver2;
     }
 }

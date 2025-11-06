@@ -49,7 +49,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Britannic Bold", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
-            this.label1.Location = new System.Drawing.Point(301, 39);
+            this.label1.Location = new System.Drawing.Point(400, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(265, 26);
             this.label1.TabIndex = 0;
@@ -59,7 +59,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(120, 124);
+            this.label2.Location = new System.Drawing.Point(219, 140);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 17);
             this.label2.TabIndex = 1;
@@ -81,7 +81,7 @@
                 "S)",
             "PLAGAS SANITARIAS",
             "PROBLEMAS CON EL ARBOLADO Y JARDINERÍA (RAMAS CAÍDAS, RIEGO, PODA)"});
-            this.cb_TipoIncidencia.Location = new System.Drawing.Point(357, 124);
+            this.cb_TipoIncidencia.Location = new System.Drawing.Point(456, 140);
             this.cb_TipoIncidencia.Name = "cb_TipoIncidencia";
             this.cb_TipoIncidencia.Size = new System.Drawing.Size(349, 21);
             this.cb_TipoIncidencia.TabIndex = 2;
@@ -90,7 +90,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(120, 190);
+            this.label3.Location = new System.Drawing.Point(219, 206);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(211, 17);
             this.label3.TabIndex = 3;
@@ -99,7 +99,7 @@
             // tb_DescripcionProblema
             // 
             this.tb_DescripcionProblema.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_DescripcionProblema.Location = new System.Drawing.Point(357, 189);
+            this.tb_DescripcionProblema.Location = new System.Drawing.Point(456, 205);
             this.tb_DescripcionProblema.Multiline = true;
             this.tb_DescripcionProblema.Name = "tb_DescripcionProblema";
             this.tb_DescripcionProblema.Size = new System.Drawing.Size(349, 69);
@@ -108,7 +108,7 @@
             // tb_Ubicacion
             // 
             this.tb_Ubicacion.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Ubicacion.Location = new System.Drawing.Point(393, 360);
+            this.tb_Ubicacion.Location = new System.Drawing.Point(492, 376);
             this.tb_Ubicacion.Name = "tb_Ubicacion";
             this.tb_Ubicacion.Size = new System.Drawing.Size(313, 20);
             this.tb_Ubicacion.TabIndex = 6;
@@ -117,7 +117,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(120, 276);
+            this.label4.Location = new System.Drawing.Point(219, 292);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 17);
             this.label4.TabIndex = 5;
@@ -130,7 +130,7 @@
             this.btnenviarep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnenviarep.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnenviarep.ForeColor = System.Drawing.Color.White;
-            this.btnenviarep.Location = new System.Drawing.Point(382, 452);
+            this.btnenviarep.Location = new System.Drawing.Point(481, 468);
             this.btnenviarep.Name = "btnenviarep";
             this.btnenviarep.Size = new System.Drawing.Size(95, 35);
             this.btnenviarep.TabIndex = 7;
@@ -142,7 +142,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(120, 323);
+            this.label5.Location = new System.Drawing.Point(219, 339);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 17);
             this.label5.TabIndex = 9;
@@ -152,7 +152,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(390, 324);
+            this.label6.Location = new System.Drawing.Point(489, 340);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(176, 17);
             this.label6.TabIndex = 10;
@@ -176,7 +176,7 @@
             "SALAVERRY",
             "SIMBAL",
             "VÍCTOR LARCO"});
-            this.cbdistrito.Location = new System.Drawing.Point(123, 359);
+            this.cbdistrito.Location = new System.Drawing.Point(222, 375);
             this.cbdistrito.Name = "cbdistrito";
             this.cbdistrito.Size = new System.Drawing.Size(191, 21);
             this.cbdistrito.TabIndex = 11;
@@ -198,7 +198,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(824, 539);
+            this.ClientSize = new System.Drawing.Size(984, 601);
             this.Controls.Add(this.btnvolver);
             this.Controls.Add(this.cbdistrito);
             this.Controls.Add(this.label6);

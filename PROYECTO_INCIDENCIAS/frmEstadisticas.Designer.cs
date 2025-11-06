@@ -34,6 +34,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEstadisticas));
             this.chartIncidencias = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnvolver4 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartIncidencias)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnvolver4)).BeginInit();
             this.SuspendLayout();
@@ -44,8 +45,9 @@
             this.chartIncidencias.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartIncidencias.Legends.Add(legend1);
-            this.chartIncidencias.Location = new System.Drawing.Point(67, 109);
+            this.chartIncidencias.Location = new System.Drawing.Point(103, 135);
             this.chartIncidencias.Name = "chartIncidencias";
+            this.chartIncidencias.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
@@ -66,21 +68,35 @@
             this.btnvolver4.TabStop = false;
             this.btnvolver4.Click += new System.EventHandler(this.btnvolver4_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Britannic Bold", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
+            this.label1.Location = new System.Drawing.Point(293, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(395, 26);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "DISTRITOS CON MAYOES INCIDENCIAS";
+            // 
             // frmEstadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(929, 571);
+            this.ClientSize = new System.Drawing.Size(984, 601);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnvolver4);
             this.Controls.Add(this.chartIncidencias);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmEstadisticas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEstadisticas";
+            this.Load += new System.EventHandler(this.frmEstadisticas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartIncidencias)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnvolver4)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -88,5 +104,6 @@
 
         private System.Windows.Forms.DataVisualization.Charting.Chart chartIncidencias;
         private System.Windows.Forms.PictureBox btnvolver4;
+        private System.Windows.Forms.Label label1;
     }
 }

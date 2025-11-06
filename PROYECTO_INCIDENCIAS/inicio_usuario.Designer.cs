@@ -47,6 +47,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnestadis = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.webView22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.webView23)).BeginInit();
@@ -56,13 +57,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnestadis)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblbienvenido
             // 
             this.lblbienvenido.AutoSize = true;
             this.lblbienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblbienvenido.Location = new System.Drawing.Point(12, 9);
+            this.lblbienvenido.Location = new System.Drawing.Point(12, 11);
             this.lblbienvenido.Name = "lblbienvenido";
             this.lblbienvenido.Size = new System.Drawing.Size(109, 20);
             this.lblbienvenido.TabIndex = 0;
@@ -73,7 +75,7 @@
             this.webView21.AllowExternalDrop = true;
             this.webView21.CreationProperties = null;
             this.webView21.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.webView21.Location = new System.Drawing.Point(16, 95);
+            this.webView21.Location = new System.Drawing.Point(13, 15);
             this.webView21.Name = "webView21";
             this.webView21.Size = new System.Drawing.Size(220, 253);
             this.webView21.TabIndex = 6;
@@ -84,7 +86,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Britannic Bold", 17.25F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
-            this.label2.Location = new System.Drawing.Point(325, 35);
+            this.label2.Location = new System.Drawing.Point(325, 30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(243, 26);
             this.label2.TabIndex = 7;
@@ -95,7 +97,7 @@
             this.webView22.AllowExternalDrop = true;
             this.webView22.CreationProperties = null;
             this.webView22.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.webView22.Location = new System.Drawing.Point(242, 95);
+            this.webView22.Location = new System.Drawing.Point(250, 15);
             this.webView22.Name = "webView22";
             this.webView22.Size = new System.Drawing.Size(220, 253);
             this.webView22.TabIndex = 8;
@@ -106,7 +108,7 @@
             this.webView23.AllowExternalDrop = true;
             this.webView23.CreationProperties = null;
             this.webView23.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.webView23.Location = new System.Drawing.Point(471, 95);
+            this.webView23.Location = new System.Drawing.Point(485, 15);
             this.webView23.Name = "webView23";
             this.webView23.Size = new System.Drawing.Size(220, 253);
             this.webView23.TabIndex = 9;
@@ -117,7 +119,7 @@
             this.webView24.AllowExternalDrop = true;
             this.webView24.CreationProperties = null;
             this.webView24.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.webView24.Location = new System.Drawing.Point(697, 95);
+            this.webView24.Location = new System.Drawing.Point(722, 15);
             this.webView24.Name = "webView24";
             this.webView24.Size = new System.Drawing.Size(220, 253);
             this.webView24.TabIndex = 10;
@@ -167,7 +169,7 @@
             // 
             // labelConsejo
             // 
-            this.labelConsejo.Location = new System.Drawing.Point(216, 524);
+            this.labelConsejo.Location = new System.Drawing.Point(298, 527);
             this.labelConsejo.Name = "labelConsejo";
             this.labelConsejo.Size = new System.Drawing.Size(580, 34);
             this.labelConsejo.TabIndex = 15;
@@ -182,7 +184,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(140, 514);
+            this.pictureBox1.Location = new System.Drawing.Point(222, 517);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(71, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -231,12 +233,24 @@
             this.btnestadis.TabStop = false;
             this.btnestadis.Click += new System.EventHandler(this.btnestadis_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.webView24);
+            this.panel1.Controls.Add(this.webView23);
+            this.panel1.Controls.Add(this.webView22);
+            this.panel1.Controls.Add(this.webView21);
+            this.panel1.Location = new System.Drawing.Point(16, 80);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(956, 287);
+            this.panel1.TabIndex = 21;
+            // 
             // inicio_usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(929, 571);
+            this.ClientSize = new System.Drawing.Size(984, 601);
             this.Controls.Add(this.btnestadis);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox2);
@@ -247,12 +261,9 @@
             this.Controls.Add(this.btnvisestado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnregistroincidencia);
-            this.Controls.Add(this.webView24);
-            this.Controls.Add(this.webView23);
-            this.Controls.Add(this.webView22);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.webView21);
             this.Controls.Add(this.lblbienvenido);
+            this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "inicio_usuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -267,6 +278,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnestadis)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,5 +303,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox btnestadis;
+        private System.Windows.Forms.Panel panel1;
     }
 }

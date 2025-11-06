@@ -41,7 +41,7 @@ namespace PROYECTO_INCIDENCIAS
                     case 1: mostrar_riesgo = "URGENTE"; break;
                     case 2: mostrar_riesgo = "MEDIO"; break;
                     case 3: mostrar_riesgo = "BAJO"; break;
-                    case 4: mostrar_riesgo = "A EVALUACIÓN"; break;
+                    case 4: mostrar_riesgo = "NO ESPECIFICADO"; break;
                 }
 
                 dgv.Rows.Add(i, usuario, tipo, descripcion, ubicacion, fecha.ToString("dd/MM/yyyy HH:mm:ss"), mostrar_riesgo);
@@ -156,7 +156,7 @@ namespace PROYECTO_INCIDENCIAS
                     case "urgente": riesgo_mostrar = 1; break;
                     case "medio": riesgo_mostrar = 2; break;
                     case "bajo": riesgo_mostrar = 3; break;
-                    case "a evaluación": riesgo_mostrar = 4; break;
+                    case "no especificado": riesgo_mostrar = 4; break;
 
                 }
                 RegistroProblema atendido = Program.ColaReportesGLOBAL.EliminarPorDatos(usuario, tipo, descripcion, ubicacion, fecha, riesgo_mostrar);

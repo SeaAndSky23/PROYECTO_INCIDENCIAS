@@ -24,12 +24,16 @@ namespace PROYECTO_INCIDENCIAS
             string usuario = usuarioActual;
             string tipo = cb_TipoIncidencia.Text;
             string descripcion = tb_DescripcionProblema.Text;
-            string ubicacion = tb_Ubicacion.Text;
+            string ubicacion = cbdistrito.Text + " , " + tb_Ubicacion.Text;
             DateTime fechaHora = DateTime.Now;
             RegistroProblema registroproblema = new RegistroProblema(usuario, tipo, descripcion, ubicacion, fechaHora);
             registroproblema.Estado_Reporte = false;
             Program.ColaReportesGLOBAL.Encolar(registroproblema);
             MessageBox.Show("Reporte enviado correctamente");
+            cb_TipoIncidencia.SelectedIndex = -1;
+            tb_DescripcionProblema.Clear();       
+            cbdistrito.SelectedIndex = -1;       
+            tb_Ubicacion.Clear();
         }
 
         private void btnvolver_Click_1(object sender, EventArgs e)

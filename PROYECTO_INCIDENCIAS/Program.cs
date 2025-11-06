@@ -12,10 +12,10 @@ namespace PROYECTO_INCIDENCIAS
         // Instancias globales accesibles en toda la aplicación
         public static ColaReportes ColaReportesGLOBAL = new ColaReportes();
 
-        // 🔴 Aquí está la corrección:
         // Como las clases están anidadas dentro de ColaReportes,
         // debes anteponer "ColaReportes."
         public static ColaReportes.ListaEnlazadaReportesAtendidos ListaReportesGlobal = new ColaReportes.ListaEnlazadaReportesAtendidos();
+        public static ListaEnlazadaReportesAtendidos Lista___Eliminados_Global = new ListaEnlazadaReportesAtendidos();
         public static ColaReportes.PilaReportes PilaReportesGlobal = new ColaReportes.PilaReportes();
 
         /// <summary>

@@ -54,7 +54,7 @@ namespace PROYECTO_INCIDENCIAS
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.lblNombre.Location = new System.Drawing.Point(175, 88);
+            this.lblNombre.Location = new System.Drawing.Point(246, 101);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(169, 22);
             this.lblNombre.TabIndex = 0;
@@ -64,7 +64,7 @@ namespace PROYECTO_INCIDENCIAS
             // 
             this.lblDni.AutoSize = true;
             this.lblDni.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.lblDni.Location = new System.Drawing.Point(175, 216);
+            this.lblDni.Location = new System.Drawing.Point(244, 245);
             this.lblDni.Name = "lblDni";
             this.lblDni.Size = new System.Drawing.Size(41, 22);
             this.lblDni.TabIndex = 1;
@@ -73,7 +73,7 @@ namespace PROYECTO_INCIDENCIAS
             // tbNombre
             // 
             this.tbNombre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNombre.Location = new System.Drawing.Point(198, 113);
+            this.tbNombre.Location = new System.Drawing.Point(269, 126);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(403, 29);
             this.tbNombre.TabIndex = 2;
@@ -81,7 +81,7 @@ namespace PROYECTO_INCIDENCIAS
             // TbDNI
             // 
             this.TbDNI.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbDNI.Location = new System.Drawing.Point(198, 241);
+            this.TbDNI.Location = new System.Drawing.Point(267, 270);
             this.TbDNI.Name = "TbDNI";
             this.TbDNI.Size = new System.Drawing.Size(403, 29);
             this.TbDNI.TabIndex = 3;
@@ -94,7 +94,7 @@ namespace PROYECTO_INCIDENCIAS
             this.btRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btRegistrar.Font = new System.Drawing.Font("Segoe UI", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btRegistrar.Location = new System.Drawing.Point(348, 440);
+            this.btRegistrar.Location = new System.Drawing.Point(426, 517);
             this.btRegistrar.Name = "btRegistrar";
             this.btRegistrar.Size = new System.Drawing.Size(119, 38);
             this.btRegistrar.TabIndex = 4;
@@ -106,7 +106,7 @@ namespace PROYECTO_INCIDENCIAS
             // 
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.lblTelefono.Location = new System.Drawing.Point(171, 355);
+            this.lblTelefono.Location = new System.Drawing.Point(244, 403);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(97, 22);
             this.lblTelefono.TabIndex = 5;
@@ -115,7 +115,7 @@ namespace PROYECTO_INCIDENCIAS
             // tbTelefono
             // 
             this.tbTelefono.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbTelefono.Location = new System.Drawing.Point(194, 380);
+            this.tbTelefono.Location = new System.Drawing.Point(267, 430);
             this.tbTelefono.Name = "tbTelefono";
             this.tbTelefono.Size = new System.Drawing.Size(196, 29);
             this.tbTelefono.TabIndex = 6;
@@ -124,7 +124,7 @@ namespace PROYECTO_INCIDENCIAS
             // 
             this.lblVerificacion.AutoSize = true;
             this.lblVerificacion.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.lblVerificacion.Location = new System.Drawing.Point(427, 355);
+            this.lblVerificacion.Location = new System.Drawing.Point(500, 403);
             this.lblVerificacion.Name = "lblVerificacion";
             this.lblVerificacion.Size = new System.Drawing.Size(95, 22);
             this.lblVerificacion.TabIndex = 7;
@@ -133,7 +133,7 @@ namespace PROYECTO_INCIDENCIAS
             // tbVerificacion
             // 
             this.tbVerificacion.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbVerificacion.Location = new System.Drawing.Point(455, 380);
+            this.tbVerificacion.Location = new System.Drawing.Point(528, 430);
             this.tbVerificacion.Name = "tbVerificacion";
             this.tbVerificacion.Size = new System.Drawing.Size(196, 29);
             this.tbVerificacion.TabIndex = 8;
@@ -141,7 +141,7 @@ namespace PROYECTO_INCIDENCIAS
             // tbcontra
             // 
             this.tbcontra.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbcontra.Location = new System.Drawing.Point(194, 308);
+            this.tbcontra.Location = new System.Drawing.Point(265, 350);
             this.tbcontra.Name = "tbcontra";
             this.tbcontra.PasswordChar = '*';
             this.tbcontra.Size = new System.Drawing.Size(407, 29);
@@ -151,7 +151,7 @@ namespace PROYECTO_INCIDENCIAS
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.label3.Location = new System.Drawing.Point(171, 283);
+            this.label3.Location = new System.Drawing.Point(242, 325);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 22);
             this.label3.TabIndex = 11;
@@ -161,7 +161,7 @@ namespace PROYECTO_INCIDENCIAS
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.label2.Location = new System.Drawing.Point(171, 152);
+            this.label2.Location = new System.Drawing.Point(242, 171);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 22);
             this.label2.TabIndex = 9;
@@ -170,7 +170,7 @@ namespace PROYECTO_INCIDENCIAS
             // tbusuario
             // 
             this.tbusuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbusuario.Location = new System.Drawing.Point(194, 177);
+            this.tbusuario.Location = new System.Drawing.Point(265, 196);
             this.tbusuario.Name = "tbusuario";
             this.tbusuario.ReadOnly = true;
             this.tbusuario.Size = new System.Drawing.Size(407, 29);
@@ -181,7 +181,7 @@ namespace PROYECTO_INCIDENCIAS
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Book Antiqua", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
-            this.label1.Location = new System.Drawing.Point(292, 17);
+            this.label1.Location = new System.Drawing.Point(363, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(269, 32);
             this.label1.TabIndex = 12;
@@ -204,7 +204,7 @@ namespace PROYECTO_INCIDENCIAS
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(834, 511);
+            this.ClientSize = new System.Drawing.Size(984, 601);
             this.Controls.Add(this.btnvolver3);
             this.Controls.Add(this.tbcontra);
             this.Controls.Add(this.label3);
