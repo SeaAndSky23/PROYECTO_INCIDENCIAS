@@ -81,7 +81,7 @@ namespace PROYECTO_INCIDENCIAS
                 {
                     // Generar código
                     Random rnd = new Random();
-                    codigo_telefono = rnd.Next(1000, 999999).ToString();
+                    codigo_telefono = rnd.Next(100, 9999).ToString();
                     MessageBox.Show("Tu código de verificación es: " + codigo_telefono + ". Por favor, ingrésalo.");
 
                     lblVerificacion.Visible = true;
@@ -145,13 +145,6 @@ namespace PROYECTO_INCIDENCIAS
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-        }
-
-        private void btnvolver_Click(object sender, EventArgs e)
-        {
-            Form1 form1 = new Form1();
-            form1.Show();
-            this.Hide();
         }
 
         private void btnvolver3_Click(object sender, EventArgs e)

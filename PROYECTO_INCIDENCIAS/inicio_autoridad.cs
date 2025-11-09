@@ -7,7 +7,9 @@ using System.Linq;
 //using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.DataVisualization.Charting;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace PROYECTO_INCIDENCIAS
 {
@@ -120,18 +122,16 @@ namespace PROYECTO_INCIDENCIAS
         //REGRESAR AL INICIO
         private void vOLVERToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 inicio = new Form1();
-            inicio.Show();
-            this.Hide();
+            this.Close();
         }
 
         //VER REPORTES EN PROCESO
-        private void vERREPORTESToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            v_insidencias_proceso proceso = new v_insidencias_proceso();
-            proceso.Show();
-            this.Hide();
-        }
+        //private void vERREPORTESToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+            //v_insidencias_proceso proceso = new v_insidencias_proceso();
+            //proceso.Show();
+            //this.Hide();
+        //}
 
         //ATENDER REPORTE
         private void aTENDERToolStripMenuItem_Click(object sender, EventArgs e)
@@ -162,7 +162,33 @@ namespace PROYECTO_INCIDENCIAS
                 RegistroProblema atendido = Program.ColaReportesGLOBAL.EliminarPorDatos(usuario, tipo, descripcion, ubicacion, fecha, riesgo_mostrar);
                 if (atendido != null)
                 {
-                    MessageBox.Show("Registro correctamente procesado, no olvidar comunicar a la comisaría respectiva");
+                    string llamar_segun_reporte = "Indefinido";
+                    switch (tipo)
+                    {
+                        case "INCIDENTES DE BIENESTAR ANIMAL":
+                            llamar_segun_reporte = "Porfavor comunica lo sucedido al municipio o veterinaria local"; break;
+                        case "PLAGAS SANITARIAS":
+                            llamar_segun_reporte = "Porfavor comunica lo sucedido al municipio local y compañia especializada"; break;
+                        case "AVERÍAS EN LA RED DE AGUA O ALCANTARILLADO":
+                            llamar_segun_reporte = "Porfavor comunica lo sucedido a la sede central de Sedalib"; break;
+                        case "INCENDIOS(ESTRUCTURALES, NATURALES)":
+                            llamar_segun_reporte = "Porfavor comunica de manera URGENTE a la sede de los bomberos voluntarios, la comisaría y hospital local"; break;
+                        case "ACCIDENTES DE TRÁFICO (PEATONALES, VEHICULARES)":
+                            llamar_segun_reporte = "Porfavor comunica de manera URGENTE al hospital y comisaría local"; break;
+                        case "DELITOS (ROBOS, HURTOS, VANDALISMO, ASALTOS)":
+                        case "ACTIVIDADES DE MANIFESTACIÓN O DISTURBIOS":
+                            llamar_segun_reporte = "Porfavor comunica de manera URGENTE lo sucedido a la camisaría local"; break;
+                        case "PROBLEMAS CON SERVICIOS URBANOS(ALUMBRADO PÚBLICO, LIMPIEZA Y GESTIÓN DE RESIDUOS)":
+                        case "DEFICIENCIAS EN LA VÍA PÚBLICA(BACHES, ACERAS ROTAS, MOBILIARIO URBANO DAÑADO)":
+                        case "PROBLEMAS CON EL ARBOLADO Y JARDINERÍA(RAMAS CAÍDAS, RIEGO, PODA)":
+                            llamar_segun_reporte = "Porfavor comunica al encargado del municipio local"; break;
+                    }
+                    string a;
+                    a = Microsoft.VisualBasic.Interaction.InputBox("Porfavor comentale al usuario el estado de su reporte", "Mensaje para los usuarios", "mensaje", 250, 200);
+                    atendido.Comentario_enproceso = a;
+                    MessageBox.Show("Registro correctamente procesado, " + llamar_segun_reporte);
+                    MessageBox.Show("Toma en cuenta y comunica lo sucedido a la autoridad encargada de " + atendido.Ubicacion.ToUpper());
+                    MessageBox.Show("Registro correctamente procesado");
                     Program.ListaReportesGlobal.AgregarReporteAtendidos(atendido);
                     MostrarDataCola(Program.ColaReportesGLOBAL.Inicio, dgvvisualincidencias);
                 }
@@ -274,6 +300,14 @@ namespace PROYECTO_INCIDENCIAS
 
         private void inicio_autoridad_Load(object sender, EventArgs e)
         {
+            menuStrip1.BackColor = Color.DarkRed;
+            menuStrip1.ForeColor = Color.White;
+            menuStrip1.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            menuStrip1.AutoSize = false;
+            menuStrip1.Height = 30;
+            menuStrip1.Cursor = Cursors.Hand;
+            menuStrip1.RenderMode = ToolStripRenderMode.Professional;
+
             label4.Text = "0";
             label5.Text = "0";
             label6.Text = "0";
@@ -283,5 +317,6 @@ namespace PROYECTO_INCIDENCIAS
             timer1.Enabled = true;  
             timer1.Interval = 1000; 
         }
+
     }
 }

@@ -83,9 +83,10 @@ namespace PROYECTO_INCIDENCIAS
 
         private void btnvolver2_Click(object sender, EventArgs e)
         {
-            inicio_usuario usuario = new inicio_usuario(usuarioactual);
-            usuario.Show();
             this.Close();
+            //inicio_usuario usuario = new inicio_usuario(usuarioactual);
+            //usuario.Show();
+            //this.Close();
         }
     }
 }

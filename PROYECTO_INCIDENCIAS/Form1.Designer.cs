@@ -40,13 +40,14 @@ namespace PROYECTO_INCIDENCIAS
             this.label3 = new System.Windows.Forms.Label();
             this.isusuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(376, 94);
+            this.pictureBox1.Location = new System.Drawing.Point(340, 157);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(174, 185);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -58,7 +59,7 @@ namespace PROYECTO_INCIDENCIAS
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Book Antiqua", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
-            this.label4.Location = new System.Drawing.Point(333, 37);
+            this.label4.Location = new System.Drawing.Point(296, 85);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(269, 32);
             this.label4.TabIndex = 9;
@@ -70,7 +71,7 @@ namespace PROYECTO_INCIDENCIAS
             this.iscrearcuenta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iscrearcuenta.Font = new System.Drawing.Font("Segoe UI", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.iscrearcuenta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
-            this.iscrearcuenta.Location = new System.Drawing.Point(414, 481);
+            this.iscrearcuenta.Location = new System.Drawing.Point(375, 544);
             this.iscrearcuenta.Name = "iscrearcuenta";
             this.iscrearcuenta.Size = new System.Drawing.Size(88, 13);
             this.iscrearcuenta.TabIndex = 7;
@@ -84,7 +85,7 @@ namespace PROYECTO_INCIDENCIAS
             this.isbtningresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.isbtningresar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.isbtningresar.ForeColor = System.Drawing.Color.White;
-            this.isbtningresar.Location = new System.Drawing.Point(416, 425);
+            this.isbtningresar.Location = new System.Drawing.Point(377, 488);
             this.isbtningresar.Name = "isbtningresar";
             this.isbtningresar.Size = new System.Drawing.Size(89, 34);
             this.isbtningresar.TabIndex = 6;
@@ -95,7 +96,7 @@ namespace PROYECTO_INCIDENCIAS
             // iscontrase
             // 
             this.iscontrase.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iscontrase.Location = new System.Drawing.Point(362, 382);
+            this.iscontrase.Location = new System.Drawing.Point(326, 445);
             this.iscontrase.Name = "iscontrase";
             this.iscontrase.PasswordChar = '*';
             this.iscontrase.Size = new System.Drawing.Size(202, 21);
@@ -105,7 +106,7 @@ namespace PROYECTO_INCIDENCIAS
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(362, 361);
+            this.label3.Location = new System.Drawing.Point(326, 424);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 15);
             this.label3.TabIndex = 4;
@@ -114,7 +115,7 @@ namespace PROYECTO_INCIDENCIAS
             // isusuario
             // 
             this.isusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isusuario.Location = new System.Drawing.Point(362, 322);
+            this.isusuario.Location = new System.Drawing.Point(326, 385);
             this.isusuario.Name = "isusuario";
             this.isusuario.Size = new System.Drawing.Size(202, 21);
             this.isusuario.TabIndex = 3;
@@ -123,18 +124,28 @@ namespace PROYECTO_INCIDENCIAS
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(362, 303);
+            this.label2.Location = new System.Drawing.Point(326, 366);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "USUARIO";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(14)))), ((int)(((byte)(16)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(834, 40);
+            this.panel1.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(954, 541);
+            this.ClientSize = new System.Drawing.Size(834, 601);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.iscrearcuenta);
             this.Controls.Add(this.isbtningresar);
@@ -162,6 +173,7 @@ namespace PROYECTO_INCIDENCIAS
         private Label iscrearcuenta;
         private Button isbtningresar;
         private Label label4;
+        private Panel panel1;
     }
 }
 

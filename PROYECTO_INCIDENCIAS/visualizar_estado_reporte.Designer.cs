@@ -39,7 +39,7 @@
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comentarios = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_estado_reporte)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnact)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnvolver2)).BeginInit();
@@ -48,11 +48,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Britannic Bold", 17.25F);
+            this.label1.Font = new System.Drawing.Font("Britannic Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
-            this.label1.Location = new System.Drawing.Point(415, 20);
+            this.label1.Location = new System.Drawing.Point(379, 95);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 26);
+            this.label1.Size = new System.Drawing.Size(280, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "ESTADO DE REPORTES";
             // 
@@ -66,17 +66,18 @@
             this.descripcion,
             this.fecha,
             this.estado,
-            this.comentarios});
-            this.dgv_estado_reporte.Location = new System.Drawing.Point(12, 88);
+            this.Column1});
+            this.dgv_estado_reporte.Location = new System.Drawing.Point(6, 141);
             this.dgv_estado_reporte.Name = "dgv_estado_reporte";
-            this.dgv_estado_reporte.Size = new System.Drawing.Size(1106, 441);
+            this.dgv_estado_reporte.ReadOnly = true;
+            this.dgv_estado_reporte.Size = new System.Drawing.Size(956, 469);
             this.dgv_estado_reporte.TabIndex = 1;
             // 
             // btnact
             // 
             this.btnact.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnact.Image = ((System.Drawing.Image)(resources.GetObject("btnact.Image")));
-            this.btnact.Location = new System.Drawing.Point(21, 20);
+            this.btnact.Location = new System.Drawing.Point(22, 90);
             this.btnact.Name = "btnact";
             this.btnact.Size = new System.Drawing.Size(42, 35);
             this.btnact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -88,7 +89,7 @@
             // 
             this.btnvolver2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnvolver2.Image = ((System.Drawing.Image)(resources.GetObject("btnvolver2.Image")));
-            this.btnvolver2.Location = new System.Drawing.Point(1074, 5);
+            this.btnvolver2.Location = new System.Drawing.Point(1222, 20);
             this.btnvolver2.Name = "btnvolver2";
             this.btnvolver2.Size = new System.Drawing.Size(44, 50);
             this.btnvolver2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -98,52 +99,59 @@
             // 
             // numero
             // 
-            this.numero.HeaderText = "NUMERO";
+            this.numero.HeaderText = "Nº";
             this.numero.Name = "numero";
-            this.numero.Width = 70;
+            this.numero.ReadOnly = true;
+            this.numero.Width = 40;
             // 
             // nombre
             // 
             this.nombre.HeaderText = "NOMBRE";
             this.nombre.Name = "nombre";
-            this.nombre.Width = 150;
+            this.nombre.ReadOnly = true;
+            this.nombre.Width = 110;
             // 
             // tipo
             // 
             this.tipo.HeaderText = "TIPO";
             this.tipo.Name = "tipo";
-            this.tipo.Width = 150;
+            this.tipo.ReadOnly = true;
+            this.tipo.Width = 190;
             // 
             // descripcion
             // 
             this.descripcion.HeaderText = "DESCRIPCION";
             this.descripcion.Name = "descripcion";
-            this.descripcion.Width = 220;
+            this.descripcion.ReadOnly = true;
+            this.descripcion.Width = 150;
             // 
             // fecha
             // 
             this.fecha.HeaderText = "FECHA";
             this.fecha.Name = "fecha";
-            this.fecha.Width = 150;
+            this.fecha.ReadOnly = true;
+            this.fecha.Width = 120;
             // 
             // estado
             // 
             this.estado.HeaderText = "ESTADO";
             this.estado.Name = "estado";
-            this.estado.Width = 150;
+            this.estado.ReadOnly = true;
+            this.estado.Width = 110;
             // 
-            // comentarios
+            // Column1
             // 
-            this.comentarios.HeaderText = "COMENTARIOS";
-            this.comentarios.Name = "comentarios";
-            this.comentarios.Width = 180;
+            this.Column1.HeaderText = "COMENTARIOS";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 190;
             // 
             // visualizar_estado_reporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1130, 601);
+            this.ClientSize = new System.Drawing.Size(974, 727);
             this.Controls.Add(this.btnvolver2);
             this.Controls.Add(this.btnact);
             this.Controls.Add(this.dgv_estado_reporte);
@@ -172,6 +180,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn estado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn comentarios;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

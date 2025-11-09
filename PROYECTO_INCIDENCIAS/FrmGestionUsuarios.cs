@@ -158,8 +158,8 @@ namespace PROYECTO_INCIDENCIAS
 
         private void btnvolver4_Click(object sender, EventArgs e)
         {
-            inicio_autoridad inicio = new inicio_autoridad();
-            inicio.Show();
+            FormAutoridad inicioautoridad = new FormAutoridad();
+            inicioautoridad.Show();
             this.Hide();
         }
     }

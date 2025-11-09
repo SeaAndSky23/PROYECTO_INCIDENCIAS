@@ -47,14 +47,17 @@ namespace PROYECTO_INCIDENCIAS
             this.tbusuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnvolver3 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btnvolver3)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.lblNombre.Location = new System.Drawing.Point(246, 101);
+            this.lblNombre.Location = new System.Drawing.Point(162, 242);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(169, 22);
             this.lblNombre.TabIndex = 0;
@@ -64,7 +67,7 @@ namespace PROYECTO_INCIDENCIAS
             // 
             this.lblDni.AutoSize = true;
             this.lblDni.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.lblDni.Location = new System.Drawing.Point(244, 245);
+            this.lblDni.Location = new System.Drawing.Point(160, 386);
             this.lblDni.Name = "lblDni";
             this.lblDni.Size = new System.Drawing.Size(41, 22);
             this.lblDni.TabIndex = 1;
@@ -73,7 +76,7 @@ namespace PROYECTO_INCIDENCIAS
             // tbNombre
             // 
             this.tbNombre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNombre.Location = new System.Drawing.Point(269, 126);
+            this.tbNombre.Location = new System.Drawing.Point(185, 267);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(403, 29);
             this.tbNombre.TabIndex = 2;
@@ -81,7 +84,7 @@ namespace PROYECTO_INCIDENCIAS
             // TbDNI
             // 
             this.TbDNI.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbDNI.Location = new System.Drawing.Point(267, 270);
+            this.TbDNI.Location = new System.Drawing.Point(183, 411);
             this.TbDNI.Name = "TbDNI";
             this.TbDNI.Size = new System.Drawing.Size(403, 29);
             this.TbDNI.TabIndex = 3;
@@ -94,7 +97,7 @@ namespace PROYECTO_INCIDENCIAS
             this.btRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btRegistrar.Font = new System.Drawing.Font("Segoe UI", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btRegistrar.Location = new System.Drawing.Point(426, 517);
+            this.btRegistrar.Location = new System.Drawing.Point(342, 658);
             this.btRegistrar.Name = "btRegistrar";
             this.btRegistrar.Size = new System.Drawing.Size(119, 38);
             this.btRegistrar.TabIndex = 4;
@@ -106,7 +109,7 @@ namespace PROYECTO_INCIDENCIAS
             // 
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.lblTelefono.Location = new System.Drawing.Point(244, 403);
+            this.lblTelefono.Location = new System.Drawing.Point(160, 544);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(97, 22);
             this.lblTelefono.TabIndex = 5;
@@ -115,7 +118,7 @@ namespace PROYECTO_INCIDENCIAS
             // tbTelefono
             // 
             this.tbTelefono.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbTelefono.Location = new System.Drawing.Point(267, 430);
+            this.tbTelefono.Location = new System.Drawing.Point(183, 571);
             this.tbTelefono.Name = "tbTelefono";
             this.tbTelefono.Size = new System.Drawing.Size(196, 29);
             this.tbTelefono.TabIndex = 6;
@@ -124,7 +127,7 @@ namespace PROYECTO_INCIDENCIAS
             // 
             this.lblVerificacion.AutoSize = true;
             this.lblVerificacion.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.lblVerificacion.Location = new System.Drawing.Point(500, 403);
+            this.lblVerificacion.Location = new System.Drawing.Point(416, 544);
             this.lblVerificacion.Name = "lblVerificacion";
             this.lblVerificacion.Size = new System.Drawing.Size(95, 22);
             this.lblVerificacion.TabIndex = 7;
@@ -133,7 +136,7 @@ namespace PROYECTO_INCIDENCIAS
             // tbVerificacion
             // 
             this.tbVerificacion.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbVerificacion.Location = new System.Drawing.Point(528, 430);
+            this.tbVerificacion.Location = new System.Drawing.Point(444, 571);
             this.tbVerificacion.Name = "tbVerificacion";
             this.tbVerificacion.Size = new System.Drawing.Size(196, 29);
             this.tbVerificacion.TabIndex = 8;
@@ -141,7 +144,7 @@ namespace PROYECTO_INCIDENCIAS
             // tbcontra
             // 
             this.tbcontra.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbcontra.Location = new System.Drawing.Point(265, 350);
+            this.tbcontra.Location = new System.Drawing.Point(181, 491);
             this.tbcontra.Name = "tbcontra";
             this.tbcontra.PasswordChar = '*';
             this.tbcontra.Size = new System.Drawing.Size(407, 29);
@@ -151,7 +154,7 @@ namespace PROYECTO_INCIDENCIAS
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.label3.Location = new System.Drawing.Point(242, 325);
+            this.label3.Location = new System.Drawing.Point(158, 466);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 22);
             this.label3.TabIndex = 11;
@@ -161,7 +164,7 @@ namespace PROYECTO_INCIDENCIAS
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.label2.Location = new System.Drawing.Point(242, 171);
+            this.label2.Location = new System.Drawing.Point(158, 312);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 22);
             this.label2.TabIndex = 9;
@@ -170,7 +173,7 @@ namespace PROYECTO_INCIDENCIAS
             // tbusuario
             // 
             this.tbusuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbusuario.Location = new System.Drawing.Point(265, 196);
+            this.tbusuario.Location = new System.Drawing.Point(181, 337);
             this.tbusuario.Name = "tbusuario";
             this.tbusuario.ReadOnly = true;
             this.tbusuario.Size = new System.Drawing.Size(407, 29);
@@ -181,7 +184,7 @@ namespace PROYECTO_INCIDENCIAS
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Book Antiqua", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
-            this.label1.Location = new System.Drawing.Point(363, 30);
+            this.label1.Location = new System.Drawing.Point(252, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(269, 32);
             this.label1.TabIndex = 12;
@@ -191,21 +194,42 @@ namespace PROYECTO_INCIDENCIAS
             // 
             this.btnvolver3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnvolver3.Image = ((System.Drawing.Image)(resources.GetObject("btnvolver3.Image")));
-            this.btnvolver3.Location = new System.Drawing.Point(12, 12);
+            this.btnvolver3.Location = new System.Drawing.Point(25, 12);
             this.btnvolver3.Name = "btnvolver3";
-            this.btnvolver3.Size = new System.Drawing.Size(44, 50);
+            this.btnvolver3.Size = new System.Drawing.Size(63, 51);
             this.btnvolver3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnvolver3.TabIndex = 14;
             this.btnvolver3.TabStop = false;
             this.btnvolver3.Click += new System.EventHandler(this.btnvolver3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(303, 172);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(158, 35);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "REGISTRO";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Maroon;
+            this.panel1.Controls.Add(this.btnvolver3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(766, 80);
+            this.panel1.TabIndex = 16;
             // 
             // RegistroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(984, 601);
-            this.Controls.Add(this.btnvolver3);
+            this.ClientSize = new System.Drawing.Size(766, 733);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.tbcontra);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -225,6 +249,7 @@ namespace PROYECTO_INCIDENCIAS
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistroUsuario";
             ((System.ComponentModel.ISupportInitialize)(this.btnvolver3)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,5 +272,7 @@ namespace PROYECTO_INCIDENCIAS
         private TextBox tbcontra;
         private Label label3;
         private PictureBox btnvolver3;
+        private Label label4;
+        private Panel panel1;
     }
 }

@@ -65,8 +65,10 @@ namespace PROYECTO_INCIDENCIAS
 
                         if (rol == "Administrador")
                         {
-                            inicio_autoridad formAdmin = new inicio_autoridad();
-                            formAdmin.Show();
+                            FormAutoridad autoridad = new FormAutoridad();
+                            autoridad.Show();
+                            //inicio_autoridad formAdmin = new inicio_autoridad();
+                            //formAdmin.Show();
                         }
                         else
                         {
@@ -74,7 +76,7 @@ namespace PROYECTO_INCIDENCIAS
                             formUsuario.Show();
                         }
 
-                        this.Hide();
+                        //this.Hide();
                         break;
                     }
                 }

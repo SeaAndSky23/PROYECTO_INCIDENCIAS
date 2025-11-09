@@ -84,6 +84,9 @@ namespace PROYECTO_INCIDENCIAS
             {
                 Program.ListaReportesGlobal.EliminarReporteFINALIZADO(seleccionado);
                 Program.PilaReportesGlobal.Apilar(seleccionado);
+                string b;
+                b = Microsoft.VisualBasic.Interaction.InputBox("Porfavor comentale al usuario el estado final de su reporte", "Mensaje para los usuarios", "mensaje", 250, 200);
+                seleccionado.Comentario_finalizado = b;
                 MessageBox.Show("Reporte correctamente finalizado");
                 MostrarDataLista(Program.ListaReportesGlobal.Inicio, dgv_ListaAtendiendose);
             }
@@ -116,6 +119,9 @@ namespace PROYECTO_INCIDENCIAS
             if (MessageBox.Show("¿Estas seguro de eliminar el reporte?", "ATENCIÓN",
        MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
+                string c;
+                c = Microsoft.VisualBasic.Interaction.InputBox("Porfavor detalla porque descartas este reporte", "Justificación para los usuarios", "mensaje", 250, 200);
+                seleccionado_elimiar.Comentario_Eliminado = c;
                 Program.ListaReportesGlobal.EliminarReporteFINALIZADO(seleccionado_elimiar);
                 Program.Lista___Eliminados_Global.AgregarReporteAtendidos(seleccionado_elimiar);
                 MessageBox.Show("Reporte correctamente eliminado");
@@ -130,9 +136,9 @@ namespace PROYECTO_INCIDENCIAS
         //REGRESAR AL INICIO
         private void vOLVERToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            inicio_autoridad autoridadinicio = new inicio_autoridad();
-            autoridadinicio.Show();
-            this.Hide();
+            //inicio_autoridad autoridadinicio = new inicio_autoridad();
+            //autoridadinicio.Show();
+            this.Close();
         }
 
         //IMPRIMIR REPORTES DEL DIA
@@ -185,6 +191,8 @@ namespace PROYECTO_INCIDENCIAS
 
                 MessageBox.Show("Reporte generado correctamente en la carpeta 'ReportesFinalizados'.");
                 Program.PilaReportesGlobal = new PilaReportes();
+                Vistarepfin vistarepfin = new Vistarepfin();
+                vistarepfin.Show();
             }
         }
 
@@ -289,6 +297,13 @@ namespace PROYECTO_INCIDENCIAS
 
         private void v_insidencias_proceso_Load(object sender, EventArgs e)
         {
+            menuStrip1.BackColor = Color.DarkRed;
+            menuStrip1.ForeColor = Color.White;
+            menuStrip1.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            menuStrip1.AutoSize = false;
+            menuStrip1.Height = 30;
+            menuStrip1.Cursor = Cursors.Hand;
+            menuStrip1.RenderMode = ToolStripRenderMode.Professional;
             timer1.Enabled = true;
             timer1.Start();
         }

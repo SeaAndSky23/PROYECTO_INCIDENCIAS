@@ -35,13 +35,7 @@ namespace PROYECTO_INCIDENCIAS
             tb_DescripcionProblema.Clear();
             cbdistrito.SelectedIndex = -1;
             tb_Ubicacion.Clear();
-        }
-
-        private void btnvolver_Click_1(object sender, EventArgs e)
-        {
-            inicio_usuario usuario = new inicio_usuario(usuarioActual);
-            usuario.Show();
-            this.Close();
+            tb_comentarios.Clear();
         }
     }
 }
